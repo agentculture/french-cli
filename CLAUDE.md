@@ -12,18 +12,18 @@ stories, learn & practice French written and spoken from your phone).
 `culture-agent-template` scaffold, renamed: an agent-first CLI skeleton, a mesh
 identity, a vendored skill kit, and a CI/publish baseline. Every verb
 (`whoami`, `learn`, `explain`, `overview`, `doctor`, `cli overview`) is generic
-template introspection — no French domain code exists. The package docstrings
-and `explain` catalog still describe the repo as "a clonable template for
-AgentCulture mesh agents," which is accurate for the code but not for the
-project's purpose. Expect to write the tutor domain from scratch, and to update
-that self-description prose as you do.
+introspection — no French domain code exists. `learn` and the `explain` root
+entry now describe the tutor *intent*, but nothing behind them teaches French.
+Expect to write the domain from scratch. Some prose still carries the template's
+framing (`french/__init__.py`'s docstring, `overview`'s "sibling-pattern
+artifacts" section); update it as the real surface lands.
 
 ## Commands
 
 ```bash
 uv sync                                  # install (creates .venv)
-uv run french whoami                     # run the CLI — note: `french`, not `french-cli`
-uv run pytest -n auto                    # full suite (22 tests, ~1s)
+uv run french whoami                     # run the CLI — the command is `french`
+uv run pytest -n auto                    # full suite (23 tests, ~1s)
 uv run pytest tests/test_cli.py::test_whoami_text -v   # a single test
 ```
 
@@ -44,37 +44,32 @@ CI's coverage invocation (`fail_under = 60`):
 uv run pytest -n auto --cov=french --cov-report=xml:coverage.xml --cov-report=term -v
 ```
 
-## Known breakage: the rubric gate fails on a clean checkout
+## Naming: `french` is the command, `french-cli` is the package
 
-`uv run teken cli doctor . --strict` **exits 1** today, which means the CI
-`lint` job is red before you change anything:
+Two names coexist **on purpose**. Don't "fix" one into the other.
 
-```text
-FAIL (error) explain_self: `explain french` exit=1
-             hint: add an entry for 'french' (and the root) in the explain catalog
-```
+| Thing | Value |
+|-------|-------|
+| Console script / argparse `prog` — what you type | `french` |
+| Distribution, PyPI name, repo, mesh nick (`culture.yaml` `suffix`) | `french-cli` |
+| Import package | `french` |
 
-The cause is an incomplete rename. Three different names are in play:
+The rule when you add a string: **invocations say `french`** (usage lines,
+command maps, `explain` paths, help text); **identity says `french-cli`**
+(`_FALLBACK_NICK`, `learn --json`'s `tool` field, `_pkg_version("french-cli")`,
+the `overview` subject, the `doctor` report header). `learn --json` exposes both
+— `tool` is the distribution, `command` is what to invoke.
 
-| Thing | Value | Where |
-|-------|-------|-------|
-| Distribution / PyPI name | `french-cli` | `pyproject.toml` `[project] name` |
-| Import package | `french` | `french/` |
-| Console script | `french` | `pyproject.toml` `[project.scripts]` |
-| argparse `prog` | `french-cli` | `french/cli/__init__.py` |
+The agent-first rubric resolves the tool's own name from `[project.scripts]`
+and requires `explain <that name>` to resolve, so `french/explain/catalog.py`
+keys its root entry on **both** `("french",)` and `("french-cli",)`. Dropping
+the `("french",)` key turns the CI `lint` job red with
+`FAIL explain_self: explain french exit=1` — that was a real defect, fixed in
+0.4.1, and `test_explain_self_matches_console_script` now guards it.
 
-The rubric derives the tool's own name from `[project.scripts]` (→ `french`) and
-requires `explain <that name>` to resolve, but `french/explain/catalog.py` keys
-the root entry on `("french-cli",)`. Fix it by picking one name and committing
-to it — either add a `("french",)` key to `ENTRIES`, or rename the console
-script to `french-cli`. Whichever you choose, the argparse `prog`, the catalog
-keys, the `_TEXT`/`_as_json_payload` blocks in `learn.py`, and every `uv run …`
-line in `README.md` must agree.
-
-Related doc drift, worth fixing in the same pass: `README.md` documents
-`uv run french-cli whoami` / `uv run french-cli learn` (no such script — it's
-`uv run french`), and points at "the `git grep` discovery command in
-`CLAUDE.md`" that has never existed in this file.
+If you ever rename the console script, the argparse `prog`, the catalog keys,
+`learn.py`'s hand-maintained `_TEXT` **and** `_as_json_payload`, and the README
+must all move together.
 
 ## Architecture: the agent-first contract
 

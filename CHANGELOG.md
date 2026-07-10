@@ -31,23 +31,39 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   guides Claude Code sessions while `AGENTS.colleague.md` is the resident
   prompt this agent runs on.
 
-- **Recorded two known defects rather than silently working around them**
-  (both pre-existing, neither introduced here):
+- **Settled the CLI's name as a deliberate two-name split**, and documented the
+  rule in `CLAUDE.md`: **invocations say `french`** (the console script, the
+  argparse `prog`, usage lines, command maps, `explain` paths, help text) while
+  **identity says `french-cli`** (the distribution / PyPI name, the repo, the
+  `culture.yaml` mesh nick, `_FALLBACK_NICK`, `_pkg_version`, the `overview`
+  subject, the `doctor` report header). `learn --json` now exposes both: the
+  existing `tool` field carries the distribution, and a new `command` field
+  carries the invocation. `README.md`'s CLI table and quickstart were rewritten
+  to the real command.
 
-  - `uv run teken cli doctor . --strict` exits 1 on a clean checkout, so the CI
-    `lint` job is red before any change. The rename from `culture-agent-template`
-    left three names disagreeing — dist `french-cli`, console script `french`
-    (`[project.scripts]`), argparse `prog` `french-cli`. The rubric derives the
-    tool name from `[project.scripts]` and requires `explain french` to resolve,
-    but `french/explain/catalog.py` keys its root entry on `("french-cli",)`.
-    `CLAUDE.md` carries the name table and the two possible fixes; picking one
-    is a deliberate naming decision, not a mechanical patch, so it is deferred
-    to a follow-up.
-  - `README.md`'s quickstart invokes `uv run french-cli whoami` / `learn`, but
-    no such console script exists (it is `uv run french`), and it points at a
-    `git grep` discovery command "in `CLAUDE.md`" that has never existed there.
+- **`README.md`: replaced the vestigial "Make it your own" section.** It was
+  cloner boilerplate — this repo *is* the clone — and its step 1 pointed at a
+  `git grep` discovery command "in `CLAUDE.md`" that never existed there. It is
+  now a "Status" section stating plainly that the French-tutor domain is not
+  built yet.
 
 ### Fixed
+
+- **The CI `lint` job was red on a clean checkout**, and had been since the
+  template rename: `uv run teken cli doctor . --strict` exited 1 with
+  ``FAIL (error) explain_self: `explain french` exit=1``. The agent-first rubric
+  resolves the tool's own name from `[project.scripts]` (→ `french`) and
+  requires `explain <that name>` to resolve, but `french/explain/catalog.py`
+  keyed its root entry only on `("french-cli",)`, and the argparse `prog` also
+  disagreed with the installed script. The catalog root is now reachable under
+  **both** `("french",)` and `("french-cli",)`, `prog` is `french`, and every
+  usage string in the package (`learn.py`'s `_TEXT` *and* `_as_json_payload`,
+  the `explain` remediation hint, the command docstrings and `--help` text) was
+  moved onto the `french` invocation. The rubric now passes 26/26.
+
+  `test_explain_self` was widened to assert **both** names resolve, and a new
+  `test_explain_self_matches_console_script` pins the catalog key to the
+  console script so this specific regression cannot recur silently.
 
 - `uv.lock` had drifted out of sync with `pyproject.toml` — the lock still
   pinned `french-cli 0.3.4` while the project declared `0.4.0` (the 0.4.0 bump

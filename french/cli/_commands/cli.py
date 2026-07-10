@@ -1,4 +1,4 @@
-"""``french-cli cli`` — noun grouping CLI-surface introspection.
+"""``french cli`` — noun grouping CLI-surface introspection.
 
 Exists to satisfy the agent-first rubric's ``overview_cli_noun_exists`` check:
 any noun with action-verbs must also expose ``overview``. There are no
@@ -23,14 +23,14 @@ def cmd_cli_overview(args: argparse.Namespace) -> int:
 
 
 def _no_verb(args: argparse.Namespace) -> int:
-    # `french-cli cli` with no sub-verb prints the noun's overview.
+    # `french cli` with no sub-verb prints the noun's overview.
     return cmd_cli_overview(args)
 
 
 def register(sub: argparse._SubParsersAction) -> None:
     p = sub.add_parser(
         "cli",
-        help="CLI-surface introspection (see 'french-cli cli overview').",
+        help="CLI-surface introspection (see 'french cli overview').",
     )
     p.add_argument("--json", action="store_true", help="Emit structured JSON.")
     p.set_defaults(func=_no_verb, json=False)

@@ -21,7 +21,7 @@ def test_version_flag(capsys: pytest.CaptureFixture[str]) -> None:
 def test_no_args_prints_help(capsys: pytest.CaptureFixture[str]) -> None:
     rc = main([])
     assert rc == 0
-    assert "usage: french-cli" in capsys.readouterr().out
+    assert "usage: french" in capsys.readouterr().out
 
 
 def test_unknown_command_errors(capsys: pytest.CaptureFixture[str]) -> None:
@@ -72,7 +72,9 @@ def test_learn_json(capsys: pytest.CaptureFixture[str]) -> None:
     rc = main(["learn", "--json"])
     assert rc == 0
     payload = json.loads(capsys.readouterr().out)
+    # `tool` is the distribution / mesh nick; `command` is what you invoke.
     assert payload["tool"] == "french-cli"
+    assert payload["command"] == "french"
     assert payload["version"] == __version__
     assert payload["json_support"] is True
 
@@ -83,13 +85,32 @@ def test_learn_json(capsys: pytest.CaptureFixture[str]) -> None:
 def test_explain_root(capsys: pytest.CaptureFixture[str]) -> None:
     rc = main(["explain"])
     assert rc == 0
-    assert "# french-cli" in capsys.readouterr().out
+    out = capsys.readouterr().out
+    # Titled by the command; names the distribution so both are discoverable.
+    assert out.startswith("# french\n")
+    assert "french-cli" in out
 
 
 def test_explain_self(capsys: pytest.CaptureFixture[str]) -> None:
-    rc = main(["explain", "french-cli"])
-    assert rc == 0
-    assert capsys.readouterr().out.startswith("#")
+    # The agent-first rubric resolves the tool's name from [project.scripts]
+    # and requires `explain <that name>` to work. The console script is
+    # `french`; `french-cli` is the distribution / mesh nick. Both resolve.
+    for name in ("french", "french-cli"):
+        rc = main(["explain", name])
+        assert rc == 0, f"explain {name} failed"
+        assert capsys.readouterr().out.startswith("#")
+
+
+def test_explain_self_matches_console_script() -> None:
+    """`explain <console-script>` must resolve — this is what the rubric checks.
+
+    Guards the defect that made `teken cli doctor --strict` fail: the catalog
+    keyed its root on the distribution name while the script was named `french`.
+    """
+    from french.explain import known_paths
+
+    assert ("french",) in known_paths()
+    assert ("french-cli",) in known_paths()
 
 
 def test_explain_json(capsys: pytest.CaptureFixture[str]) -> None:
@@ -97,7 +118,7 @@ def test_explain_json(capsys: pytest.CaptureFixture[str]) -> None:
     assert rc == 0
     payload = json.loads(capsys.readouterr().out)
     assert payload["path"] == ["whoami"]
-    assert "french-cli whoami" in payload["markdown"]
+    assert "french whoami" in payload["markdown"]
 
 
 def test_explain_unknown_path_errors(capsys: pytest.CaptureFixture[str]) -> None:

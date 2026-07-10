@@ -1,4 +1,4 @@
-"""``french-cli doctor`` — check the agent-identity invariants.
+"""``french doctor`` — check the agent-identity invariants.
 
 Mirrors the two invariants ``steward doctor`` verifies for a mesh agent:
 

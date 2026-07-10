@@ -69,9 +69,12 @@ def _build_parser() -> argparse.ArgumentParser:
     from french.cli._commands import overview as _overview_cmd
     from french.cli._commands import whoami as _whoami_cmd
 
+    # prog is the installed console script (`french`), not the distribution
+    # name (`french-cli`). The agent-first rubric resolves the tool's own name
+    # from [project.scripts] and requires `explain <that name>` to work.
     parser = _CliArgumentParser(
-        prog="french-cli",
-        description="french-cli — a clonable template for AgentCulture mesh agents.",
+        prog="french",
+        description="french — a private French tutor (PyPI package: french-cli).",
     )
     parser.add_argument(
         "--version",

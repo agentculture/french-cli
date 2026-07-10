@@ -1,4 +1,4 @@
-"""``french-cli overview`` — read-only descriptive snapshot of the agent.
+"""``french overview`` — read-only descriptive snapshot of the agent.
 
 Describes the agent to an agent reader: identity (from culture.yaml), the verb
 surface, and the sibling-pattern artifacts this template carries. The shared

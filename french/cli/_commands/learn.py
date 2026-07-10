@@ -1,4 +1,4 @@
-"""``french-cli learn`` — the learnability affordance.
+"""``french learn`` — the learnability affordance.
 
 Prints a structured self-teaching prompt. Must satisfy the agent-first rubric:
 >=200 chars and mention purpose, command map, exit codes, --json, and explain.
@@ -12,23 +12,24 @@ from french import __version__
 from french.cli._output import emit_result
 
 _TEXT = """\
-french-cli — a clonable template for AgentCulture mesh agents.
+french — a private French tutor (PyPI package: french-cli).
 
 Purpose
 -------
-Scaffold for a new Culture mesh agent: an agent-first CLI (cited from the teken
-`python-cli` reference), an identity (culture.yaml + CLAUDE.md), the canonical
-guildmaster skill kit under .claude/skills/, and a deploy/CI baseline. Clone it,
-rename the package, and edit culture.yaml to mint a new agent.
+Track progress, get an overview, get advice, read stories, and learn & practice
+French (written and spoken) online from your phone. Built on an agent-first CLI
+(cited from the teken `python-cli` reference) with a Culture mesh identity
+(culture.yaml + AGENTS.colleague.md) and the guildmaster skill kit under
+.claude/skills/.
 
 Commands
 --------
-  french-cli whoami             Identity from culture.yaml.
-  french-cli learn              This self-teaching prompt.
-  french-cli explain <path>...  Markdown docs for any noun/verb path.
-  french-cli overview           Descriptive snapshot of the agent.
-  french-cli doctor             Check the agent-identity invariants.
-  french-cli cli overview       Describe the CLI surface itself.
+  french whoami             Identity from culture.yaml.
+  french learn              This self-teaching prompt.
+  french explain <path>...  Markdown docs for any noun/verb path.
+  french overview           Descriptive snapshot of the agent.
+  french doctor             Check the agent-identity invariants.
+  french cli overview       Describe the CLI surface itself.
 
 Machine-readable output
 -----------------------
@@ -44,15 +45,18 @@ Exit-code policy
 
 More detail
 -----------
-  french-cli explain french-cli
+  french explain french
 """
 
 
 def _as_json_payload() -> dict[str, object]:
     return {
+        # `tool` is the distribution / mesh nick; `command` is what you invoke.
         "tool": "french-cli",
+        "command": "french",
         "version": __version__,
-        "purpose": "Clonable scaffold for a new AgentCulture mesh agent.",
+        "purpose": "A private French tutor: track progress, read stories, and "
+        "practice French written and spoken.",
         "commands": [
             {"path": ["whoami"], "summary": "Identity probe from culture.yaml."},
             {"path": ["learn"], "summary": "Self-teaching prompt."},
@@ -67,7 +71,7 @@ def _as_json_payload() -> dict[str, object]:
             "2": "environment/setup error",
         },
         "json_support": True,
-        "explain_pointer": "french-cli explain <path>",
+        "explain_pointer": "french explain <path>",
     }
 
 

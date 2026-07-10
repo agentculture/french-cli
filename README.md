@@ -19,40 +19,40 @@ Agent + CLI that turns Claude into a private French tutor: track progress, get a
 ```bash
 uv sync
 uv run pytest -n auto                 # run the test suite
-uv run french-cli whoami  # identity from culture.yaml
-uv run french-cli learn   # self-teaching prompt (add --json)
+uv run french whoami                  # identity from culture.yaml
+uv run french learn                   # self-teaching prompt (add --json)
 uv run teken cli doctor . --strict    # the agent-first rubric gate CI runs
 ```
+
+The installed command is **`french`**; the PyPI package and repo are
+**`french-cli`**. `french explain french` and `french explain french-cli` both
+resolve to the root doc entry.
 
 ## CLI
 
 | Verb | What it does |
 |------|--------------|
-| `whoami` | Report this agent's nick, version, backend, and model from `culture.yaml`. |
-| `learn` | Print a structured self-teaching prompt. |
-| `explain <path>` | Markdown docs for any noun/verb path. |
-| `overview` | Read-only descriptive snapshot of the agent. |
-| `doctor` | Check the agent-identity invariants (prompt-file-present, backend-consistency). |
-| `cli overview` | Describe the CLI surface itself. |
+| `french whoami` | Report this agent's nick, version, backend, and model from `culture.yaml`. |
+| `french learn` | Print a structured self-teaching prompt. |
+| `french explain <path>` | Markdown docs for any noun/verb path. |
+| `french overview` | Read-only descriptive snapshot of the agent. |
+| `french doctor` | Check the agent-identity invariants (prompt-file-present, backend-consistency). |
+| `french cli overview` | Describe the CLI surface itself. |
 
 Every command supports `--json`. Results go to stdout, errors/diagnostics to
 stderr (never mixed). Exit codes: `0` success, `1` user error, `2` environment
 error, `3+` reserved.
 
-## Make it your own
+## Status
 
-1. Rename the package `french/` and the `french-cli`
-   CLI/dist name throughout `pyproject.toml`, the package, `tests/`,
-   `sonar-project.properties`, and this `README.md`. The name is hard-coded in
-   ~100 places, so list every occurrence first — see the `git grep` discovery
-   command in [`CLAUDE.md`](CLAUDE.md), the authoritative rename procedure.
-2. Edit `culture.yaml` with your `suffix` and `backend`.
-3. Rewrite `CLAUDE.md` for your agent and run `/init`.
-4. Re-vendor only the skills you need from guildmaster (see
-   [`docs/skill-sources.md`](docs/skill-sources.md)).
+**The French-tutor domain is not implemented yet.** The scaffold — identity,
+skill kit, CI, and the agent-first CLI contract — is in place, but every verb
+today is generic introspection (`whoami`, `learn`, `explain`, `overview`,
+`doctor`, `cli overview`). Progress tracking, advice, stories, and written /
+spoken practice are still to be built.
 
-See [`CLAUDE.md`](CLAUDE.md) for the full conventions (version-bump-every-PR,
-the `cicd` PR lane, deploy setup).
+See [`CLAUDE.md`](CLAUDE.md) for the architecture and the full conventions
+(version-bump-every-PR, the `cicd` PR lane, deploy setup).
 
 ## License
 

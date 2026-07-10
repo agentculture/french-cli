@@ -5,6 +5,55 @@ All notable changes to this project will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/). This project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.1] - 2026-07-10
+
+### Changed
+
+- **Re-initialized `CLAUDE.md` from the bootstrap seed into a full runtime
+  prompt** (`/init`). The seed only carried the agent description and a
+  "run `/init`" instruction; it is now a working prompt derived from the code
+  as it actually behaves. Documents: that the French-tutor domain is **not yet
+  implemented** (every verb is still generic template introspection, and the
+  package docstrings still describe the repo as a clonable template); the
+  agent-first contract enforced by `teken cli doctor . --strict` and which
+  apparently-dead code it makes load-bearing (`overview`'s ignored `target`
+  positional, the `cli` noun group, `_CliArgumentParser._json_hint`); the
+  `backend: colleague` → `AGENTS.colleague.md` coupling that `doctor.py`'s
+  `_PROMPT_FILE` map and `test_doctor_recognizes_declared_backend` enforce
+  together, so a backend promotion cannot silently skip the mapping; the
+  cite-don't-import rules for `.claude/skills/` (including that `type: command`
+  is load-bearing — `core.skill_loader` silently skips a `SKILL.md` without it);
+  and the version-bump-every-PR gate.
+
+  The seed also re-introduced the stale `backend: claude` / `CLAUDE.md` claim
+  that 0.3.4 had already corrected elsewhere; the new file states the actual
+  `colleague` / `AGENTS.colleague.md` identity, and notes that `CLAUDE.md`
+  guides Claude Code sessions while `AGENTS.colleague.md` is the resident
+  prompt this agent runs on.
+
+- **Recorded two known defects rather than silently working around them**
+  (both pre-existing, neither introduced here):
+
+  - `uv run teken cli doctor . --strict` exits 1 on a clean checkout, so the CI
+    `lint` job is red before any change. The rename from `culture-agent-template`
+    left three names disagreeing — dist `french-cli`, console script `french`
+    (`[project.scripts]`), argparse `prog` `french-cli`. The rubric derives the
+    tool name from `[project.scripts]` and requires `explain french` to resolve,
+    but `french/explain/catalog.py` keys its root entry on `("french-cli",)`.
+    `CLAUDE.md` carries the name table and the two possible fixes; picking one
+    is a deliberate naming decision, not a mechanical patch, so it is deferred
+    to a follow-up.
+  - `README.md`'s quickstart invokes `uv run french-cli whoami` / `learn`, but
+    no such console script exists (it is `uv run french`), and it points at a
+    `git grep` discovery command "in `CLAUDE.md`" that has never existed there.
+
+### Fixed
+
+- `uv.lock` had drifted out of sync with `pyproject.toml` — the lock still
+  pinned `french-cli 0.3.4` while the project declared `0.4.0` (the 0.4.0 bump
+  never re-locked). `uv sync` refreshed the pin and re-sorted the package
+  blocks into alphabetical order.
+
 ## [0.4.0] - 2026-06-23
 
 ### Added

@@ -82,6 +82,25 @@
       "item_id": "fr.story.fr-b1-la-fete-des-voisins.4",
       "prompt": "Selon le texte, pourquoi la fête des voisins est-elle importante pour une communauté ? Ton quartier organise-t-il un événement similaire ?",
       "rubric": "Passes if the response connects the event to building community between strangers and offers at least a brief reflection on the learner's own context; partial if it only summarizes the story."
+    },
+    {
+      "id": "fr-b1-la-fete-des-voisins-q5",
+      "type": "cloze",
+      "item_id": "fr.story.fr-b1-la-fete-des-voisins.4",
+      "prompt": "Fill in each blank with the right word.",
+      "text": "Après quelques verres de vin et beaucoup de rires, l'ambiance se {{verbe}}. Avant cette soirée, elle connaissait {{adverbe}} le nom de ses voisins.",
+      "blanks": [
+        {
+          "id": "verbe",
+          "options": ["détend", "détendent", "détends"],
+          "answer": "détend"
+        },
+        {
+          "id": "adverbe",
+          "options": ["à peine", "déjà", "toujours"],
+          "answer": "à peine"
+        }
+      ]
     }
   ],
   "audio": null,

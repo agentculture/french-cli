@@ -89,6 +89,25 @@
       "item_id": "fr.story.fr-b1-la-recherche-appartement.4",
       "prompt": "Camille hésite entre l'espace et la proximité du travail. Si tu devais choisir, que privilégierais-tu, et pourquoi ?",
       "rubric": "Passes if the learner gives a reasoned personal preference in French that engages with the space-vs-commute trade-off; partial if it only picks one side without a reason."
+    },
+    {
+      "id": "fr-b1-la-recherche-appartement-q5",
+      "type": "cloze",
+      "item_id": "fr.story.fr-b1-la-recherche-appartement.2",
+      "prompt": "Fill in each blank with the right word.",
+      "text": "Le propriétaire explique que le loyer comprend les {{mot}}, mais pas internet. Bien qu'il soit {{adj}} et lumineux, le trajet jusqu'au travail prendrait presque quarante minutes.",
+      "blanks": [
+        {
+          "id": "mot",
+          "options": ["charges", "frais", "taxes"],
+          "answer": "charges"
+        },
+        {
+          "id": "adj",
+          "options": ["spacieux", "spacieuse", "spacieuses"],
+          "answer": "spacieux"
+        }
+      ]
     }
   ],
   "audio": null,

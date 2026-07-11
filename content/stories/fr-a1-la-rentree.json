@@ -70,6 +70,17 @@
       "item_id": "fr.story.fr-a1-la-rentree.4",
       "prompt": "Pourquoi Nina a-t-elle un peu peur le matin de la rentrée ?",
       "rubric": "Passes if the answer mentions the new teacher or general first-day nerves; partial if it just says 'she is scared' with no reason."
+    },
+    {
+      "id": "fr-a1-la-rentree-q5",
+      "type": "cloze",
+      "item_id": "fr.story.fr-a1-la-rentree.2",
+      "prompt": "Fill in each blank with the right word.",
+      "text": "« Il y a une nouvelle {{enseignante}} cette année, » dit Nina.",
+      "answer": "maîtresse",
+      "blanks": [
+        { "id": "enseignante", "options": ["maîtresse", "maître", "professeur"], "answer": "maîtresse" }
+      ]
     }
   ],
   "audio": null,

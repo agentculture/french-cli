@@ -93,6 +93,25 @@
       "item_id": "fr.story.fr-b2-la-transition-ecologique.4",
       "prompt": "L'article insiste sur l'absence de « discours idéologique » dans la démarche du village. Penses-tu que ce soit une force ou une limite pour la transition écologique en général ?",
       "rubric": "Passes if the learner engages with the tension between pragmatic local action and broader ideological/political framing, and takes a defensible position; partial if it only summarizes the village's approach without answering the question."
+    },
+    {
+      "id": "fr-b2-la-transition-ecologique-q5",
+      "type": "cloze",
+      "item_id": "fr.story.fr-b2-la-transition-ecologique.2",
+      "prompt": "Fill in each blank with the right word.",
+      "text": "Le maire, initialement {{attitude}} quant à la rentabilité du projet, admet aujourd'hui que les économies réalisées sur la facture d'électricité ont {{verbe}} ses attentes les plus optimistes.",
+      "blanks": [
+        {
+          "id": "attitude",
+          "options": ["sceptique", "optimiste", "confiant"],
+          "answer": "sceptique"
+        },
+        {
+          "id": "verbe",
+          "options": ["dépassé", "respecté", "déçu"],
+          "answer": "dépassé"
+        }
+      ]
     }
   ],
   "audio": null,

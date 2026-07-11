@@ -73,6 +73,17 @@
       "item_id": "fr.story.fr-a2-le-weekend-a-la-montagne.4",
       "prompt": "Décris ce que la famille fait le soir dans le chalet.",
       "rubric": "Passes if the answer mentions warming up by the fireplace, the father telling stories, and the mother making hot chocolate; partial if only one detail is given."
+    },
+    {
+      "id": "fr-a2-le-weekend-a-la-montagne-q5",
+      "type": "cloze",
+      "item_id": "fr.story.fr-a2-le-weekend-a-la-montagne.1",
+      "prompt": "Fill in each blank with the right word.",
+      "text": "Ils sortent et construisent un grand {{construction}} de neige avec une carotte pour le nez.",
+      "answer": "bonhomme",
+      "blanks": [
+        { "id": "construction", "options": ["bonhomme", "château", "bateau"], "answer": "bonhomme" }
+      ]
     }
   ],
   "audio": null,

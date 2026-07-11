@@ -73,6 +73,17 @@
       "item_id": "fr.story.fr-a2-le-cafe-du-coin.4",
       "prompt": "Amina dit que retrouver une vieille amie lui a fait du bien. Raconte une fois où tu as retrouvé un ami après une longue absence.",
       "rubric": "Passes if the learner produces a coherent short personal narrative in French connected to the theme of reunion; partial if the answer is a single word or off-topic."
+    },
+    {
+      "id": "fr-a2-le-cafe-du-coin-q5",
+      "type": "cloze",
+      "item_id": "fr.story.fr-a2-le-cafe-du-coin.2",
+      "prompt": "Fill in each blank with the right word.",
+      "text": "Chloé choisit un thé à la {{gout}}.",
+      "answer": "menthe",
+      "blanks": [
+        { "id": "gout", "options": ["menthe", "citron", "vanille"], "answer": "menthe" }
+      ]
     }
   ],
   "audio": null,

@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "fr-b1-entretien-embauche",
+  "subject": "french",
+  "title": "Un entretien d'embauche",
+  "level": "intermediate",
+  "level_detail": "B1",
+  "language": "fr",
+  "summary": "Thomas navigates his first job interview, including an unexpected question about resolving conflict.",
+  "body": "Thomas attend depuis dix minutes dans la salle d'accueil de l'entreprise. Il vérifie une dernière fois son CV et relit les questions qu'il a préparées. C'est son premier entretien depuis qu'il a terminé ses études, et il est plutôt nerveux.\n\nUne femme sort d'un bureau et l'appelle : « Monsieur Lefebvre ? Vous pouvez entrer. » Il s'agit de Madame Rousseau, la responsable des ressources humaines.\n\n« Alors, parlez-moi un peu de vous, » commence-t-elle en souriant. Thomas explique son parcours : ses études en marketing, son stage dans une agence de communication, et son intérêt pour les réseaux sociaux.\n\n« Pourquoi voulez-vous travailler chez nous ? » demande Madame Rousseau. Thomas répond qu'il admire les campagnes publicitaires de l'entreprise, et qu'il aimerait contribuer à des projets créatifs tout en apprenant auprès d'une équipe expérimentée.\n\nElle lui pose ensuite une question à laquelle il ne s'attendait pas : « Racontez-moi une situation où vous avez dû résoudre un conflit. » Thomas hésite un instant, puis raconte comment il a réussi à calmer un client mécontent pendant son stage, en l'écoutant attentivement avant de proposer une solution.\n\nL'entretien dure presque quarante-cinq minutes. À la fin, Madame Rousseau explique que l'entreprise contactera les candidats retenus dans les deux semaines. Thomas la remercie chaleureusement et sort du bureau, le cœur battant.\n\nDans la rue, il envoie immédiatement un message à sa mère : « Je crois que ça s'est bien passé ! » Une semaine plus tard, il reçoit un appel : l'entreprise lui propose le poste. Toute cette nervosité, finalement, en valait la peine.",
+  "glossary": [
+    {
+      "term": "un entretien d'embauche",
+      "definition": "a job interview"
+    },
+    {
+      "term": "la salle d'accueil",
+      "definition": "the reception/waiting area"
+    },
+    {
+      "term": "les ressources humaines",
+      "definition": "human resources"
+    },
+    {
+      "term": "le parcours",
+      "definition": "one's background, career path"
+    },
+    {
+      "term": "un stage",
+      "definition": "an internship"
+    },
+    {
+      "term": "une campagne publicitaire",
+      "definition": "an advertising campaign"
+    },
+    {
+      "term": "résoudre un conflit",
+      "definition": "to resolve a conflict"
+    },
+    {
+      "term": "mécontent(e)",
+      "definition": "unhappy, displeased"
+    },
+    {
+      "term": "retenu(e)",
+      "definition": "selected, shortlisted"
+    },
+    {
+      "term": "en valoir la peine",
+      "definition": "to be worth it"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "fr-b1-entretien-embauche-q1",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-b1-entretien-embauche.1",
+      "prompt": "Quel est le métier de Madame Rousseau ?",
+      "choices": ["Responsable des ressources humaines", "Directrice marketing", "Avocate"],
+      "answer": "Responsable des ressources humaines"
+    },
+    {
+      "id": "fr-b1-entretien-embauche-q2",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-b1-entretien-embauche.2",
+      "prompt": "Quelle question surprend Thomas pendant l'entretien ?",
+      "choices": [
+        "Une question sur la résolution de conflit",
+        "Une question sur son salaire souhaité",
+        "Une question sur ses loisirs"
+      ],
+      "answer": "Une question sur la résolution de conflit"
+    },
+    {
+      "id": "fr-b1-entretien-embauche-q3",
+      "type": "cloze",
+      "item_id": "fr.story.fr-b1-entretien-embauche.3",
+      "prompt": "Thomas raconte comment il a calmé un client ___ pendant son stage.",
+      "answer": "mécontent"
+    },
+    {
+      "id": "fr-b1-entretien-embauche-q4",
+      "type": "open",
+      "item_id": "fr.story.fr-b1-entretien-embauche.4",
+      "prompt": "Que ferais-tu si on te posait une question à laquelle tu ne t'attends pas pendant un entretien ?",
+      "rubric": "Passes if the learner gives a coherent personal strategy in French (e.g. pausing to think, asking for clarification, giving a concrete example); partial if the answer is a single word."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "learn-cli t7a",
+    "generated_at": "2026-07-11"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "fr-a2-le-weekend-a-la-montagne",
+  "subject": "french",
+  "title": "Un week-end à la montagne",
+  "level": "beginner",
+  "level_detail": "A2",
+  "language": "fr",
+  "summary": "The Bernard family spends a snowy February weekend at a mountain chalet, skiing and building a snowman.",
+  "body": "Pour les vacances de février, la famille Bernard part à la montagne. Ils louent un petit chalet en bois près des pistes de ski.\n\nLe premier jour, il neige beaucoup. Les enfants, Tom et Julie, sont très excités. « On peut faire un bonhomme de neige ? » demande Julie. « Bien sûr, » répond leur père, « mais d'abord, il faut s'habiller chaudement ! »\n\nAprès le petit-déjeuner, toute la famille met des bottes, des gants et des bonnets. Ils sortent et construisent un grand bonhomme de neige avec une carotte pour le nez.\n\nLe lendemain, ils vont skier. Tom, qui a seulement six ans, apprend avec un moniteur. Julie, plus âgée, descend déjà les pistes bleues avec sa mère. À midi, ils mangent une fondue savoyarde dans un petit restaurant en bois, en haut de la montagne. C'est délicieux, mais très riche !\n\nLe soir, fatigués mais heureux, ils se réchauffent devant la cheminée du chalet. Le père raconte des histoires, et la mère prépare du chocolat chaud pour tout le monde.\n\nLe dernier jour, avant de rentrer à Paris, ils font une dernière descente en luge. Julie tombe dans la neige et rit aux éclats. « On revient l'année prochaine ? » demande-t-elle dans la voiture. « Promis, » dit sa mère en souriant.",
+  "glossary": [
+    {
+      "term": "le chalet",
+      "definition": "the mountain cabin/chalet"
+    },
+    {
+      "term": "les pistes (de ski)",
+      "definition": "the ski slopes"
+    },
+    {
+      "term": "un bonhomme de neige",
+      "definition": "a snowman"
+    },
+    {
+      "term": "s'habiller chaudement",
+      "definition": "to dress warmly"
+    },
+    {
+      "term": "le moniteur / la monitrice",
+      "definition": "the ski instructor"
+    },
+    {
+      "term": "la fondue savoyarde",
+      "definition": "cheese fondue (from the Savoie region)"
+    },
+    {
+      "term": "se réchauffer",
+      "definition": "to warm oneself up"
+    },
+    {
+      "term": "la luge",
+      "definition": "the sledge/sled"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "fr-a2-le-weekend-a-la-montagne-q1",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-a2-le-weekend-a-la-montagne.1",
+      "prompt": "Où part la famille Bernard pendant les vacances de février ?",
+      "choices": ["À la mer", "À la montagne", "À la campagne"],
+      "answer": "À la montagne"
+    },
+    {
+      "id": "fr-a2-le-weekend-a-la-montagne-q2",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-a2-le-weekend-a-la-montagne.2",
+      "prompt": "Qui apprend à skier avec un moniteur ?",
+      "choices": ["Julie", "Tom", "Leur père"],
+      "answer": "Tom"
+    },
+    {
+      "id": "fr-a2-le-weekend-a-la-montagne-q3",
+      "type": "true_false",
+      "item_id": "fr.story.fr-a2-le-weekend-a-la-montagne.3",
+      "prompt": "La famille mange une pizza en haut de la montagne.",
+      "answer": "false"
+    },
+    {
+      "id": "fr-a2-le-weekend-a-la-montagne-q4",
+      "type": "open",
+      "item_id": "fr.story.fr-a2-le-weekend-a-la-montagne.4",
+      "prompt": "Décris ce que la famille fait le soir dans le chalet.",
+      "rubric": "Passes if the answer mentions warming up by the fireplace, the father telling stories, and the mother making hot chocolate; partial if only one detail is given."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "learn-cli t7a",
+    "generated_at": "2026-07-11"
+  }
+}

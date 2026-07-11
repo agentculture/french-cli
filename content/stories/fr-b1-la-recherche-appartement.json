@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "fr-b1-la-recherche-appartement",
+  "subject": "french",
+  "title": "La recherche d'appartement",
+  "level": "intermediate",
+  "level_detail": "B1",
+  "language": "fr",
+  "summary": "Camille weighs a small city-centre studio against a bigger, farther apartment before choosing where to live in Bordeaux.",
+  "body": "Depuis qu'elle a trouvé un nouvel emploi à Bordeaux, Camille cherche un appartement. Ce n'est pas facile : les loyers ont beaucoup augmenté ces dernières années, et il faut souvent visiter plusieurs logements avant d'en trouver un qui convienne.\n\nCe matin, elle visite un studio dans le centre-ville. « Il est un peu petit, » pense-t-elle en entrant, « mais la lumière est agréable et il y a une petite terrasse. » Le propriétaire, un homme âgé plutôt sympathique, lui explique que le loyer comprend les charges, mais pas internet.\n\nL'après-midi, Camille visite un deuxième appartement, plus grand, mais situé loin du centre. Bien qu'il soit spacieux et lumineux, le trajet jusqu'au travail prendrait presque quarante minutes en tramway. Camille hésite : faut-il privilégier l'espace ou la proximité ?\n\nSon amie Sarah, qui vit à Bordeaux depuis longtemps, lui conseille de choisir le studio du centre-ville. « Tu passeras moins de temps dans les transports, et le quartier est vivant : il y a des cafés, un marché, et le tramway juste en bas de la rue. »\n\nAprès réflexion, Camille décide de suivre ce conseil. Elle rappelle le propriétaire du studio et lui annonce qu'elle est intéressée. Il lui demande de préparer un dossier avec ses trois derniers bulletins de salaire et une lettre de son employeur.\n\nUne semaine plus tard, Camille reçoit enfin les clés de son nouveau chez-elle. Elle est soulagée : la recherche d'appartement, aussi stressante soit-elle, est enfin terminée.",
+  "glossary": [
+    {
+      "term": "le loyer",
+      "definition": "the rent"
+    },
+    {
+      "term": "les charges",
+      "definition": "utility/service charges (often included in a French rent)"
+    },
+    {
+      "term": "le propriétaire",
+      "definition": "the landlord"
+    },
+    {
+      "term": "spacieux / spacieuse",
+      "definition": "spacious"
+    },
+    {
+      "term": "le trajet",
+      "definition": "the commute, the journey"
+    },
+    {
+      "term": "privilégier",
+      "definition": "to favor, to prioritize"
+    },
+    {
+      "term": "conseiller",
+      "definition": "to advise"
+    },
+    {
+      "term": "un dossier",
+      "definition": "an application file"
+    },
+    {
+      "term": "le bulletin de salaire",
+      "definition": "the payslip"
+    },
+    {
+      "term": "soulagé(e)",
+      "definition": "relieved"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "fr-b1-la-recherche-appartement-q1",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-b1-la-recherche-appartement.1",
+      "prompt": "Pourquoi Camille cherche-t-elle un appartement ?",
+      "choices": [
+        "Elle a trouvé un nouvel emploi à Bordeaux",
+        "Elle veut vivre avec des amis",
+        "Son appartement actuel a brûlé"
+      ],
+      "answer": "Elle a trouvé un nouvel emploi à Bordeaux"
+    },
+    {
+      "id": "fr-b1-la-recherche-appartement-q2",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-b1-la-recherche-appartement.2",
+      "prompt": "Quel appartement Camille choisit-elle finalement ?",
+      "choices": [
+        "Le studio du centre-ville",
+        "Le grand appartement loin du centre",
+        "Aucun des deux"
+      ],
+      "answer": "Le studio du centre-ville"
+    },
+    {
+      "id": "fr-b1-la-recherche-appartement-q3",
+      "type": "short_answer",
+      "item_id": "fr.story.fr-b1-la-recherche-appartement.3",
+      "prompt": "Que doit préparer Camille pour le propriétaire du studio ?",
+      "rubric": "Passes if the answer mentions the last three payslips (bulletins de salaire) and a letter from her employer; partial if only one document is named."
+    },
+    {
+      "id": "fr-b1-la-recherche-appartement-q4",
+      "type": "discussion",
+      "item_id": "fr.story.fr-b1-la-recherche-appartement.4",
+      "prompt": "Camille hésite entre l'espace et la proximité du travail. Si tu devais choisir, que privilégierais-tu, et pourquoi ?",
+      "rubric": "Passes if the learner gives a reasoned personal preference in French that engages with the space-vs-commute trade-off; partial if it only picks one side without a reason."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "learn-cli t7a",
+    "generated_at": "2026-07-11"
+  }
+}

@@ -23,7 +23,10 @@ def test_overview_json_shape(capsys: pytest.CaptureFixture[str]) -> None:
     rc = main(["overview", "--json"])
     assert rc == 0
     payload = json.loads(capsys.readouterr().out)
-    assert payload["subject"] == "french-cli"
+    # Reconciled: the contract subject id is `french`, and the agent-first
+    # rubric's `sections` key is kept alongside it (open payload).
+    assert payload["subject"] == "french"
+    assert payload["kind"] == "subject_overview"
     assert isinstance(payload["sections"], list)
     assert payload["sections"]
 
@@ -76,13 +79,13 @@ def test_cli_overview_unknown_flag_structured_error(
 
 def test_doctor_text(capsys: pytest.CaptureFixture[str]) -> None:
     rc = main(["doctor"])
-    assert rc in (0, 1)
+    assert rc in (0, 2)  # contract: 0 healthy, 2 unhealthy
     assert "french-cli doctor" in capsys.readouterr().out
 
 
 def test_doctor_json_shape(capsys: pytest.CaptureFixture[str]) -> None:
     rc = main(["doctor", "--json"])
-    assert rc in (0, 1)
+    assert rc in (0, 2)
     payload = json.loads(capsys.readouterr().out)
     assert isinstance(payload["healthy"], bool)
     assert isinstance(payload["checks"], list)

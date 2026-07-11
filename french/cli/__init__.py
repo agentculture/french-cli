@@ -62,11 +62,17 @@ def _argv_has_json(argv: list[str] | None) -> bool:
 
 
 def _build_parser() -> argparse.ArgumentParser:
+    from french.cli._commands import advice as _advice_cmd
     from french.cli._commands import cli as _cli_group
     from french.cli._commands import doctor as _doctor_cmd
     from french.cli._commands import explain as _explain_cmd
     from french.cli._commands import learn as _learn_cmd
+    from french.cli._commands import lesson as _lesson_cmd
     from french.cli._commands import overview as _overview_cmd
+    from french.cli._commands import practice as _practice_cmd
+    from french.cli._commands import progress as _progress_cmd
+    from french.cli._commands import record as _record_cmd
+    from french.cli._commands import story as _story_cmd
     from french.cli._commands import whoami as _whoami_cmd
 
     # prog is the installed console script (`french`), not the distribution
@@ -85,15 +91,20 @@ def _build_parser() -> argparse.ArgumentParser:
     # through _CliArgumentParser too.
     sub = parser.add_subparsers(dest="command", parser_class=_CliArgumentParser)
 
+    # Agent-first introspection verbs.
     _whoami_cmd.register(sub)
     _learn_cmd.register(sub)
     _explain_cmd.register(sub)
-    _overview_cmd.register(sub)
-    _doctor_cmd.register(sub)
     _cli_group.register(sub)
-    # Register your own noun groups here:
-    #   from french.cli._commands import my_noun as _my_noun_group
-    #   _my_noun_group.register(sub)
+    # The eight subject-plugin (tutor) verbs, all top-level.
+    _overview_cmd.register(sub)
+    _progress_cmd.register(sub)
+    _advice_cmd.register(sub)
+    _story_cmd.register(sub)
+    _lesson_cmd.register(sub)
+    _practice_cmd.register(sub)
+    _record_cmd.register(sub)
+    _doctor_cmd.register(sub)
 
     return parser
 

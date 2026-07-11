@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "dev-cafe",
+  "subject": "french",
+  "title": "Un cafe, s'il vous plait",
+  "level": "beginner",
+  "level_detail": "A1",
+  "language": "fr",
+  "summary": "Paul orders a coffee and a croissant, then pays at a small cafe.",
+  "body": "Paul entre dans un petit cafe. Il regarde le menu.\n\n« Bonjour ! Je voudrais un cafe et un croissant, s'il vous plait. »\n\nLe serveur sourit. « Tres bien. Ca fait trois euros cinquante. »\n\nPaul paie et s'assoit pres de la fenetre. Le cafe est chaud et le croissant est delicieux.",
+  "glossary": [
+    {
+      "term": "je voudrais",
+      "definition": "I would like",
+      "note": "The polite way to order; softer than « je veux »."
+    },
+    {
+      "term": "ca fait trois euros cinquante",
+      "definition": "that comes to three euros fifty"
+    },
+    {
+      "term": "pres de la fenetre",
+      "definition": "near the window"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "dev-cafe-q1",
+      "type": "multiple_choice",
+      "item_id": "fr.food.commander",
+      "prompt": "Qu'est-ce que Paul commande ?",
+      "choices": [
+        "Un cafe et un croissant",
+        "Un the et une tarte",
+        "Un jus et un pain"
+      ],
+      "answer": "Un cafe et un croissant"
+    },
+    {
+      "id": "dev-cafe-q2",
+      "type": "multiple_choice",
+      "item_id": "fr.numbers.prix",
+      "prompt": "Combien Paul paie-t-il ?",
+      "choices": [
+        "Deux euros",
+        "Trois euros cinquante",
+        "Dix euros"
+      ],
+      "answer": "Trois euros cinquante"
+    },
+    {
+      "id": "dev-cafe-q3",
+      "type": "cloze",
+      "item_id": "fr.food.commander",
+      "prompt": "« Je ___ un cafe, s'il vous plait. »",
+      "answer": "voudrais"
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "french-cli t4",
+    "generated_at": "2026-07-11"
+  }
+}

@@ -134,3 +134,28 @@ def test_every_catalog_path_resolves(capsys: pytest.CaptureFixture[str]) -> None
         rc = main(["explain", *path])
         assert rc == 0, f"explain {' '.join(path)} failed"
         capsys.readouterr()
+
+
+def _registered_paths() -> list[tuple[str, ...]]:
+    """Every command path registered in the argparse tree (nouns + subverbs)."""
+    import argparse
+
+    from french.cli import _build_parser
+
+    def walk(parser, prefix: tuple[str, ...]) -> list[tuple[str, ...]]:
+        found: list[tuple[str, ...]] = []
+        for action in parser._actions:
+            if isinstance(action, argparse._SubParsersAction):
+                for name, subparser in action.choices.items():
+                    found.append(prefix + (name,))
+                    found.extend(walk(subparser, prefix + (name,)))
+        return found
+
+    return walk(_build_parser(), ())
+
+
+def test_every_registered_path_has_catalog_entry() -> None:
+    """Every registered noun/verb path must have an explain catalog entry."""
+    catalog = set(known_paths())
+    missing = [p for p in _registered_paths() if p not in catalog]
+    assert missing == [], f"registered paths missing an explain entry: {missing}"

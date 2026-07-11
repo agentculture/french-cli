@@ -30,26 +30,60 @@ resolve to the root doc entry.
 
 ## CLI
 
+french-cli is an **LLM-free tutor engine** that implements the
+[learn subject-plugin contract](https://github.com/agentculture/learn-cli): it
+owns the committed French content (stories, lessons, exercises) and each
+learner's mastery state, resolves what to teach next, and emits structured
+teaching **directives**. The driving agent (or human) does the conversational
+tutoring the directive describes, grades `pass|partial|fail`, and writes the
+result back with `record`. french never converses, grades free text, or computes
+scores — learn-cli's motivation layer does the scoring.
+
+### Tutor verbs (the contract surface)
+
+| Verb | What it does | Payload `kind` |
+|------|--------------|----------------|
+| `french overview` | Subject self-description: modules + content counts. | `subject_overview` |
+| `french progress` | The learner's mastery, counters, and next step. | `progress` |
+| `french advice` | Deterministic study advice from stored state. | `advice` |
+| `french story list \| read <id>` | Graded stories + a reading directive. | `story_list` / `story_read` |
+| `french lesson start \| next \| repeat` | Teaching directives from the curriculum. | `lesson_directive` |
+| `french practice [<scope>]` | A batch of exercises to run (no scope = review). | `practice_directive` |
+| `french record --item <id> --result …` | Write back one graded outcome; updates mastery. | `record_ack` |
+| `french doctor` | Self-check + the pinned contract version. | `subject_doctor` |
+
+### Agent-first verbs
+
 | Verb | What it does |
 |------|--------------|
 | `french whoami` | Report this agent's nick, version, backend, and model from `culture.yaml`. |
 | `french learn` | Print a structured self-teaching prompt. |
 | `french explain <path>` | Markdown docs for any noun/verb path. |
-| `french overview` | Read-only descriptive snapshot of the agent. |
-| `french doctor` | Check the agent-identity invariants (prompt-file-present, backend-consistency). |
 | `french cli overview` | Describe the CLI surface itself. |
 
 Every command supports `--json`. Results go to stdout, errors/diagnostics to
 stderr (never mixed). Exit codes: `0` success, `1` user error, `2` environment
 error, `3+` reserved.
 
-## Status
+### Learner state
 
-**The French-tutor domain is not implemented yet.** The scaffold — identity,
-skill kit, CI, and the agent-first CLI contract — is in place, but every verb
-today is generic introspection (`whoami`, `learn`, `explain`, `overview`,
-`doctor`, `cli overview`). Progress tracking, advice, stories, and written /
-spoken practice are still to be built.
+Learner-scoped verbs take `--learner <id>` (default: `$FRENCH_CLI_LEARNER` or the
+OS user; the resolved id is echoed back). State persists one JSON file per
+learner under `$FRENCH_CLI_LEARN_HOME` (or `$XDG_DATA_HOME/french_cli/learn`, or
+`~/.local/share/french_cli/learn`), written atomically and resumed across
+sessions.
+
+## Content
+
+Stories are committed JSON files under `content/stories/*.json` (flat, one file
+per story, `filename == id`), each validated against the shared `story` schema in
+CI (`tests/test_story_content.py`). The starter set ships `dev-`prefixed dev
+stories; the full graded ladder is authored separately. The curriculum (modules,
+lessons, items, exercises) lives as structured data in
+`french/tutor/curriculum.py`.
+
+The contract schemas + validator are **cited (cite-don't-import)** into
+`french/contract_cite/` — see [`docs/contract-provenance.md`](docs/contract-provenance.md).
 
 See [`CLAUDE.md`](CLAUDE.md) for the architecture and the full conventions
 (version-bump-every-PR, the `cicd` PR lane, deploy setup).

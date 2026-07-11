@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "dev-marche",
+  "subject": "french",
+  "title": "Au marche du samedi",
+  "level": "beginner",
+  "level_detail": "A1",
+  "language": "fr",
+  "summary": "Claire buys apples, bread, and cheese at the Saturday market.",
+  "body": "Le samedi matin, Claire va au marche.\n\nElle achete un kilo de pommes rouges. « Bonjour, madame ! Un kilo de pommes, s'il vous plait. » Le vendeur dit : « Voila, ca fait deux euros. »\n\nEnsuite, Claire achete une baguette et un fromage de chevre. Elle aime beaucoup le fromage.\n\nA midi, elle rentre a la maison et prepare un dejeuner simple : du pain, du fromage et une pomme.",
+  "glossary": [
+    {
+      "term": "le marche",
+      "definition": "the market",
+      "note": "« un marche en plein air » is an open-air market."
+    },
+    {
+      "term": "un kilo de pommes",
+      "definition": "a kilo of apples",
+      "note": "Quantities take « de »: un kilo de, une tranche de."
+    },
+    {
+      "term": "le fromage de chevre",
+      "definition": "goat cheese"
+    },
+    {
+      "term": "elle rentre a la maison",
+      "definition": "she goes back home"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "dev-marche-q1",
+      "type": "multiple_choice",
+      "item_id": "fr.food.marche",
+      "prompt": "Quand est-ce que Claire va au marche ?",
+      "choices": [
+        "Le samedi matin",
+        "Le dimanche soir",
+        "Le lundi a midi"
+      ],
+      "answer": "Le samedi matin"
+    },
+    {
+      "id": "dev-marche-q2",
+      "type": "multiple_choice",
+      "item_id": "fr.numbers.prix",
+      "prompt": "Combien coutent les pommes ?",
+      "choices": [
+        "Deux euros",
+        "Quatre euros",
+        "Dix euros"
+      ],
+      "answer": "Deux euros"
+    },
+    {
+      "id": "dev-marche-q3",
+      "type": "cloze",
+      "item_id": "fr.food.marche",
+      "prompt": "Claire achete une baguette et un ___ de chevre.",
+      "answer": "fromage"
+    },
+    {
+      "id": "dev-marche-q4",
+      "type": "short_answer",
+      "item_id": "fr.food.marche",
+      "prompt": "Qu'est-ce que Claire mange a midi ?",
+      "rubric": "Any answer naming bread, cheese, and/or an apple (du pain, du fromage, une pomme) passes; one item is partial."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "french-cli t4",
+    "generated_at": "2026-07-11"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "dev-directions",
+  "subject": "french",
+  "title": "Ou est la gare ?",
+  "level": "intermediate",
+  "level_detail": "A2",
+  "language": "fr",
+  "summary": "Lost in town, Hugo asks a passer-by for the way to the station.",
+  "body": "Hugo est perdu. Il cherche la gare.\n\nIl arrete une dame dans la rue. « Pardon, madame. Ou est la gare, s'il vous plait ? »\n\n« C'est facile », repond la dame. « Continuez tout droit, puis tournez a gauche au coin. La gare est a cinq minutes a pied. »\n\n« Merci beaucoup ! » dit Hugo. Il tourne a gauche et trouve la gare tout de suite.",
+  "glossary": [
+    {
+      "term": "je cherche",
+      "definition": "I am looking for",
+      "note": "From « chercher »; « je cherche la gare »."
+    },
+    {
+      "term": "tout droit",
+      "definition": "straight ahead"
+    },
+    {
+      "term": "tournez a gauche",
+      "definition": "turn left",
+      "note": "« a droite » is to the right."
+    },
+    {
+      "term": "a cinq minutes a pied",
+      "definition": "five minutes away on foot"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "dev-directions-q1",
+      "type": "multiple_choice",
+      "item_id": "fr.ville.directions",
+      "prompt": "Qu'est-ce que Hugo cherche ?",
+      "choices": [
+        "La gare",
+        "Le marche",
+        "Le cafe"
+      ],
+      "answer": "La gare"
+    },
+    {
+      "id": "dev-directions-q2",
+      "type": "cloze",
+      "item_id": "fr.ville.directions",
+      "prompt": "Continuez tout droit, puis tournez a ___ au coin.",
+      "answer": "gauche"
+    },
+    {
+      "id": "dev-directions-q3",
+      "type": "short_answer",
+      "item_id": "fr.ville.directions",
+      "prompt": "La gare est a combien de minutes a pied ?",
+      "rubric": "Passes with « cinq minutes » (or « 5 minutes »); anything else is fail."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "french-cli t4",
+    "generated_at": "2026-07-11"
+  }
+}

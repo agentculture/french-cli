@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "fr-a2-le-cafe-du-coin",
+  "subject": "french",
+  "title": "Un café entre amis",
+  "level": "beginner",
+  "level_detail": "A2",
+  "language": "fr",
+  "summary": "Amina and Chloé catch up over coffee after Chloé's move to Marseille, and remember a past trip gone wrong.",
+  "body": "Samedi dernier, Amina a retrouvé son amie Chloé dans un petit café du quartier. Elles ne se sont pas vues depuis deux mois, parce que Chloé a déménagé à Marseille pour son nouveau travail.\n\n« Alors, comment s'est passé ton déménagement ? » demande Amina en s'asseyant à la table.\n\n« C'était fatigant, » répond Chloé, « mais je suis contente. Mon appartement est petit, mais il a un beau balcon avec vue sur la mer. »\n\nLe serveur arrive et leur demande ce qu'elles veulent boire. Amina commande un café crème, et Chloé choisit un thé à la menthe. Elles discutent pendant des heures : le nouveau travail de Chloé, les amis communs, et les vacances qu'elles veulent prendre ensemble cet été.\n\n« Tu te souviens de notre voyage en Espagne ? » dit Chloé en riant. « On a raté le train et on a dû dormir à la gare ! »\n\n« Comment oublier ça ? » répond Amina. « On devrait recommencer, mais sans rater le train cette fois. »\n\nAvant de partir, elles échangent leurs nouvelles adresses et promettent de s'écrire plus souvent. Amina rentre chez elle avec le sourire ; retrouver une vieille amie, même après une longue absence, lui a fait beaucoup de bien.",
+  "glossary": [
+    {
+      "term": "retrouver quelqu'un",
+      "definition": "to meet up with someone (again)"
+    },
+    {
+      "term": "déménager",
+      "definition": "to move (house)"
+    },
+    {
+      "term": "fatigant(e)",
+      "definition": "tiring"
+    },
+    {
+      "term": "le balcon",
+      "definition": "the balcony"
+    },
+    {
+      "term": "commander",
+      "definition": "to order (food/drink)"
+    },
+    {
+      "term": "rater le train",
+      "definition": "to miss the train"
+    },
+    {
+      "term": "se souvenir de",
+      "definition": "to remember"
+    },
+    {
+      "term": "faire du bien",
+      "definition": "to do (someone) good, to feel good"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "fr-a2-le-cafe-du-coin-q1",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-a2-le-cafe-du-coin.1",
+      "prompt": "Pourquoi Amina et Chloé ne se sont-elles pas vues depuis deux mois ?",
+      "choices": ["Chloé a déménagé à Marseille", "Amina était malade", "Chloé était en vacances"],
+      "answer": "Chloé a déménagé à Marseille"
+    },
+    {
+      "id": "fr-a2-le-cafe-du-coin-q2",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-a2-le-cafe-du-coin.2",
+      "prompt": "Qu'est-ce que Chloé commande à boire ?",
+      "choices": ["Un café crème", "Un thé à la menthe", "Un chocolat chaud"],
+      "answer": "Un thé à la menthe"
+    },
+    {
+      "id": "fr-a2-le-cafe-du-coin-q3",
+      "type": "short_answer",
+      "item_id": "fr.story.fr-a2-le-cafe-du-coin.3",
+      "prompt": "Que s'est-il passé pendant leur voyage en Espagne ?",
+      "rubric": "Passes if the answer mentions missing the train and having to sleep at the station; partial if it only mentions one of the two."
+    },
+    {
+      "id": "fr-a2-le-cafe-du-coin-q4",
+      "type": "discussion",
+      "item_id": "fr.story.fr-a2-le-cafe-du-coin.4",
+      "prompt": "Amina dit que retrouver une vieille amie lui a fait du bien. Raconte une fois où tu as retrouvé un ami après une longue absence.",
+      "rubric": "Passes if the learner produces a coherent short personal narrative in French connected to the theme of reunion; partial if the answer is a single word or off-topic."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "learn-cli t7a",
+    "generated_at": "2026-07-11"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "fr-b1-le-covoiturage",
+  "subject": "french",
+  "title": "Le covoiturage",
+  "level": "intermediate",
+  "level_detail": "B1",
+  "language": "fr",
+  "summary": "Julien starts carpooling to save money and ends up gaining unexpected friendships along the way.",
+  "body": "Pour économiser de l'argent et réduire son impact sur l'environnement, Julien a décidé d'essayer le covoiturage pour aller travailler. Chaque matin, il prend sa voiture, mais désormais avec trois autres passagers qu'il ne connaissait pas avant de s'inscrire sur une application.\n\nLe premier jour, l'ambiance est un peu timide. Personne ne parle vraiment, et Julien se demande s'il a fait le bon choix. Mais dès la deuxième semaine, les choses changent. Ines, une passagère qui travaille dans le même quartier que lui, propose d'apporter des viennoiseries le vendredi matin. Marc, un autre passager, raconte des histoires drôles sur son travail dans un hôpital.\n\nAu fil des semaines, ce trajet quotidien devient un moment agréable de la journée. Ils discutent de tout : de politique, de leurs enfants, des séries qu'ils regardent le soir. Julien réalise qu'il a fait des économies importantes sur l'essence, mais aussi qu'il a gagné quelque chose d'inattendu : de nouveaux amis.\n\nUn matin, la voiture tombe en panne sur l'autoroute. Au lieu de paniquer, le petit groupe reste calme. Ines appelle une dépanneuse pendant que Marc plaisante pour détendre l'atmosphère. Ils arrivent au travail en retard, mais ensemble, et cette mésaventure devient une histoire qu'ils racontent encore des mois plus tard.\n\nAujourd'hui, Julien encourage tous ses collègues à essayer le covoiturage. « On pense économiser de l'essence, » dit-il, « mais on gagne bien plus que ça. »",
+  "glossary": [
+    {
+      "term": "le covoiturage",
+      "definition": "carpooling"
+    },
+    {
+      "term": "économiser",
+      "definition": "to save (money)"
+    },
+    {
+      "term": "s'inscrire",
+      "definition": "to sign up"
+    },
+    {
+      "term": "timide",
+      "definition": "shy"
+    },
+    {
+      "term": "une viennoiserie",
+      "definition": "a pastry (croissant, pain au chocolat, etc.)"
+    },
+    {
+      "term": "au fil des semaines",
+      "definition": "as the weeks go by"
+    },
+    {
+      "term": "l'essence (f.)",
+      "definition": "gasoline/petrol"
+    },
+    {
+      "term": "tomber en panne",
+      "definition": "to break down (a vehicle)"
+    },
+    {
+      "term": "une dépanneuse",
+      "definition": "a tow truck"
+    },
+    {
+      "term": "une mésaventure",
+      "definition": "a mishap"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "fr-b1-le-covoiturage-q1",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-b1-le-covoiturage.1",
+      "prompt": "Pourquoi Julien essaie-t-il le covoiturage ?",
+      "choices": [
+        "Pour économiser de l'argent et réduire son impact environnemental",
+        "Parce que sa voiture est en panne",
+        "Parce que son travail est trop loin"
+      ],
+      "answer": "Pour économiser de l'argent et réduire son impact environnemental"
+    },
+    {
+      "id": "fr-b1-le-covoiturage-q2",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-b1-le-covoiturage.2",
+      "prompt": "Que se passe-t-il un matin sur l'autoroute ?",
+      "choices": ["La voiture tombe en panne", "Ils ont un accident", "Ils se perdent"],
+      "answer": "La voiture tombe en panne"
+    },
+    {
+      "id": "fr-b1-le-covoiturage-q3",
+      "type": "true_false",
+      "item_id": "fr.story.fr-b1-le-covoiturage.3",
+      "prompt": "Après la panne, le groupe panique et se dispute.",
+      "answer": "false"
+    },
+    {
+      "id": "fr-b1-le-covoiturage-q4",
+      "type": "open",
+      "item_id": "fr.story.fr-b1-le-covoiturage.4",
+      "prompt": "Selon Julien, qu'est-ce que le covoiturage lui a apporté en plus des économies d'essence ?",
+      "rubric": "Passes if the answer names new friendships / social connection with the other passengers; partial if it only restates the fuel savings."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "learn-cli t7a",
+    "generated_at": "2026-07-11"
+  }
+}

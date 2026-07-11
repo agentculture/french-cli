@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "fr-b2-la-transition-ecologique",
+  "subject": "french",
+  "title": "La transition écologique, vue d'un petit village",
+  "level": "advanced",
+  "level_detail": "B2",
+  "language": "fr",
+  "summary": "A profile of a small Limousin village that rebuilt its grocery store as a cooperative and added solar panels, without any ideological framing.",
+  "body": "Saint-Martin-des-Bois, un village de huit cents habitants niché au cœur du Limousin, n'a rien d'exceptionnel au premier regard. Pourtant, depuis cinq ans, il est devenu, presque malgré lui, un symbole local de la transition écologique.\n\nTout a commencé lorsque le conseil municipal, confronté à la fermeture de la dernière épicerie du village, a décidé de réagir plutôt que de subir ce déclin. Au lieu d'attendre qu'un investisseur extérieur rachète le local, les habitants ont créé une coopérative. Chacun pouvait devenir sociétaire pour une somme modeste, et l'épicerie a rouvert quelques mois plus tard, proposant en priorité des produits locaux et de saison.\n\nCe premier succès a donné des idées. Une association de bénévoles a installé des panneaux solaires sur le toit de la mairie et de l'école. Le maire, initialement sceptique quant à la rentabilité du projet, admet aujourd'hui que les économies réalisées sur la facture d'électricité ont dépassé ses attentes les plus optimistes.\n\nCertes, tout ne s'est pas déroulé sans difficulté. Convaincre les agriculteurs les plus âgés d'adopter des pratiques moins intensives, par exemple, a demandé des années de discussions patientes, souvent autour d'un verre au café du village. Certains, encore aujourd'hui, restent réticents, arguant que ces changements profitent surtout aux « citadins venus s'installer à la campagne ».\n\nCe qui frappe pourtant l'observateur extérieur, c'est l'absence de discours idéologique dans la démarche des habitants de Saint-Martin-des-Bois. Personne, ici, ne parle de sauver la planète en de grandes phrases. On évoque plutôt la volonté de garder le village vivant, de transmettre quelque chose à la génération suivante, et de ne plus dépendre entièrement de décisions prises loin, dans des bureaux qui ignorent tout des réalités locales.\n\nÀ l'heure où la transition écologique reste souvent perçue comme une contrainte imposée d'en haut, l'exemple de ce petit village rappelle qu'elle peut aussi naître, modestement, d'une volonté locale de préserver un mode de vie.",
+  "glossary": [
+    {
+      "term": "niché(e)",
+      "definition": "nestled, tucked away"
+    },
+    {
+      "term": "le conseil municipal",
+      "definition": "the town council"
+    },
+    {
+      "term": "l'épicerie (f.)",
+      "definition": "the grocery store"
+    },
+    {
+      "term": "une coopérative",
+      "definition": "a cooperative"
+    },
+    {
+      "term": "un sociétaire",
+      "definition": "a shareholder/member (of a cooperative)"
+    },
+    {
+      "term": "sceptique",
+      "definition": "skeptical"
+    },
+    {
+      "term": "la rentabilité",
+      "definition": "profitability"
+    },
+    {
+      "term": "réticent(e)",
+      "definition": "reluctant"
+    },
+    {
+      "term": "un citadin / une citadine",
+      "definition": "a city-dweller"
+    },
+    {
+      "term": "une contrainte",
+      "definition": "a constraint, an imposed burden"
+    },
+    {
+      "term": "préserver",
+      "definition": "to preserve"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "fr-b2-la-transition-ecologique-q1",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-b2-la-transition-ecologique.1",
+      "prompt": "Pourquoi le conseil municipal de Saint-Martin-des-Bois a-t-il créé une coopérative ?",
+      "choices": [
+        "Pour rouvrir la dernière épicerie du village",
+        "Pour construire une nouvelle école",
+        "Pour attirer des touristes"
+      ],
+      "answer": "Pour rouvrir la dernière épicerie du village"
+    },
+    {
+      "id": "fr-b2-la-transition-ecologique-q2",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-b2-la-transition-ecologique.2",
+      "prompt": "Qu'est-ce que le maire admet à propos des panneaux solaires ?",
+      "choices": [
+        "Que les économies ont dépassé ses attentes",
+        "Que le projet a été un échec",
+        "Que le coût était trop élevé"
+      ],
+      "answer": "Que les économies ont dépassé ses attentes"
+    },
+    {
+      "id": "fr-b2-la-transition-ecologique-q3",
+      "type": "short_answer",
+      "item_id": "fr.story.fr-b2-la-transition-ecologique.3",
+      "prompt": "Pourquoi certains agriculteurs âgés restent-ils réticents face à ces changements ?",
+      "rubric": "Passes if the answer mentions the belief that these changes mainly benefit city-dwellers who moved to the countryside; partial if it only says 'they disagree' without the reason."
+    },
+    {
+      "id": "fr-b2-la-transition-ecologique-q4",
+      "type": "discussion",
+      "item_id": "fr.story.fr-b2-la-transition-ecologique.4",
+      "prompt": "L'article insiste sur l'absence de « discours idéologique » dans la démarche du village. Penses-tu que ce soit une force ou une limite pour la transition écologique en général ?",
+      "rubric": "Passes if the learner engages with the tension between pragmatic local action and broader ideological/political framing, and takes a defensible position; partial if it only summarizes the village's approach without answering the question."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "learn-cli t7a",
+    "generated_at": "2026-07-11"
+  }
+}

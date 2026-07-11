@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "fr-a1-le-marche",
+  "subject": "french",
+  "title": "Le marché du mercredi",
+  "level": "beginner",
+  "level_detail": "A1",
+  "language": "fr",
+  "summary": "Léo goes to the Wednesday market in Lyon with his grandmother and practices talking to the vendors.",
+  "body": "Léo habite à Lyon avec sa famille. Le mercredi, il n'y a pas d'école, alors Léo va au marché avec sa grand-mère.\n\nLe marché est grand et coloré. Il y a des fruits, des légumes, du poisson et des fleurs. « Regarde ces tomates, Léo ! » dit sa grand-mère. « Elles sont rouges et bien mûres. »\n\nLéo aime parler avec les vendeurs. Il dit : « Bonjour, monsieur. Je voudrais un kilo de carottes, s'il vous plaît. » Le vendeur répond : « Voilà, mon garçon. Et avec ça ? » Léo réfléchit un moment. « Aussi des oignons, s'il vous plaît. »\n\nSa grand-mère achète du poulet et des herbes fraîches. Elle va préparer une soupe pour le dîner.\n\nAvant de rentrer, ils s'arrêtent devant un stand de fleurs. La grand-mère de Léo choisit un joli bouquet jaune pour la table de la cuisine.\n\nÀ la maison, Léo aide sa grand-mère à laver les légumes. Il est fier d'avoir parlé français avec les vendeurs, tout seul.",
+  "glossary": [
+    {
+      "term": "le marché",
+      "definition": "the market"
+    },
+    {
+      "term": "la grand-mère",
+      "definition": "the grandmother"
+    },
+    {
+      "term": "bien mûres",
+      "definition": "nice and ripe",
+      "note": "mûr(e) = ripe; agrees in gender/number with the noun."
+    },
+    {
+      "term": "je voudrais",
+      "definition": "I would like",
+      "note": "The polite conditional of vouloir, used for requests."
+    },
+    {
+      "term": "s'il vous plaît",
+      "definition": "please (formal)"
+    },
+    {
+      "term": "les herbes fraîches",
+      "definition": "fresh herbs"
+    },
+    {
+      "term": "fier / fière",
+      "definition": "proud",
+      "note": "fier de + infinitive = proud to have done something."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "fr-a1-le-marche-q1",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-a1-le-marche.1",
+      "prompt": "Quel jour Léo va-t-il au marché avec sa grand-mère ?",
+      "choices": ["Le mercredi", "Le dimanche", "Le vendredi"],
+      "answer": "Le mercredi"
+    },
+    {
+      "id": "fr-a1-le-marche-q2",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-a1-le-marche.2",
+      "prompt": "Qu'est-ce que la grand-mère de Léo va préparer avec le poulet ?",
+      "choices": ["Une salade", "Une soupe", "Un gâteau"],
+      "answer": "Une soupe"
+    },
+    {
+      "id": "fr-a1-le-marche-q3",
+      "type": "cloze",
+      "item_id": "fr.story.fr-a1-le-marche.3",
+      "prompt": "Léo dit au vendeur : « Je voudrais un kilo de ___, s'il vous plaît. »",
+      "answer": "carottes"
+    },
+    {
+      "id": "fr-a1-le-marche-q4",
+      "type": "open",
+      "item_id": "fr.story.fr-a1-le-marche.4",
+      "prompt": "Pourquoi Léo est-il fier à la fin de l'histoire ?",
+      "rubric": "Passes if the answer names that he spoke French with the vendors by himself/alone; partial if it only says he went to the market."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "learn-cli t7a",
+    "generated_at": "2026-07-11"
+  }
+}

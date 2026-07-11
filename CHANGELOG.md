@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/). This project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-07-11
+
+### Added
+
+- Learn subject-plugin contract v1.0: eight tutor verbs (overview, progress, advice, story, lesson, practice, record, doctor) with schema-valid --json and contractual exit codes
+- Tutor engine: 3-module French curriculum (5 lessons, 9 items, 18 exercises), per-learner XDG state with atomic writes and resume
+- Story ladder: 11 graded-reader stories (A1-C1) with glossaries and comprehension exercises, plus dev fixtures; CI validates all content against the cited story schema
+- Cited contract schemas + validator from learn-cli (contract v1.0, provenance ledger in docs/contract-provenance.md)
+
 ## [0.4.1] - 2026-07-10
 
 ### Changed

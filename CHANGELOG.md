@@ -5,6 +5,33 @@ All notable changes to this project will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/). This project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.0] - 2026-07-11
+
+### Added
+
+- **Pick-the-right-word cloze exercises** (contract v1.0 §3.6.1, the two-variant
+  `cloze` type) across the full story ladder: one new exercise per story (11
+  total, each named `q5` after its story's existing four), spanning all five
+  CEFR rungs (A1 through C1) and all three coarse levels. Every new exercise
+  carries `text` (a passage lifted near-verbatim from the story body, so it
+  stays answerable from the reading alone) and `blanks`, with level-appropriate
+  distractors: same-word-class confusions for A1/A2 (units of measure, flavor
+  nouns); gender/number agreement traps for B1 (`spacieux`/`spacieuse`,
+  `retenus`/`retenue`); mood and tense contrasts, including the subjunctive
+  triggered by `s'inquiéter que`, for B2; and a near-homophone reading trap
+  (`deviner`/`devenir`) for the C1 literary story. Each new exercise reuses an
+  existing exercise's `item_id` from its own story — no existing `item_id` or
+  exercise was touched, so learner mastery on those items carries over intact.
+
+### Changed
+
+- **Re-synced `french/contract_cite/schemas/{story,practice}.json` and
+  `_validate.py` from learn-cli** (source commit `cdac077`) to pick up the
+  `text`/`blanks` exercise fields and the new `cloze_blank` def added for the
+  pick-the-right-word variant. Purely additive — the contract stays `1.0`, and
+  every payload that predates these fields keeps validating unchanged; see the
+  updated stamp in `docs/contract-provenance.md`.
+
 ## [0.5.0] - 2026-07-11
 
 ### Added

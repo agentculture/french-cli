@@ -89,6 +89,25 @@
       "item_id": "fr.story.fr-b2-le-teletravail.4",
       "prompt": "L'auteur termine par une question sur une remise en cause plus vaste de l'organisation du travail salarié. Qu'en penses-tu : le télétravail est-il une simple adaptation, ou le début d'un changement plus profond ?",
       "rubric": "Passes if the learner takes and defends a position with at least one supporting reason, engaging with the article's closing question; partial if it restates the question without taking a position."
+    },
+    {
+      "id": "fr-b2-le-teletravail-q5",
+      "type": "cloze",
+      "item_id": "fr.story.fr-b2-le-teletravail.2",
+      "prompt": "Fill in each blank with the right word.",
+      "text": "Plusieurs managers s'inquiètent que le télétravail n'{{verbe}} la cohésion des équipes, et que la frontière entre vie privée et vie professionnelle ne {{verbe2}} complètement.",
+      "blanks": [
+        {
+          "id": "verbe",
+          "options": ["affaiblisse", "affaiblit", "affaiblira"],
+          "answer": "affaiblisse"
+        },
+        {
+          "id": "verbe2",
+          "options": ["s'efface", "s'effacent", "s'effaçait"],
+          "answer": "s'efface"
+        }
+      ]
     }
   ],
   "audio": null,

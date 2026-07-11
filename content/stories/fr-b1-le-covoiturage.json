@@ -85,6 +85,25 @@
       "item_id": "fr.story.fr-b1-le-covoiturage.4",
       "prompt": "Selon Julien, qu'est-ce que le covoiturage lui a apporté en plus des économies d'essence ?",
       "rubric": "Passes if the answer names new friendships / social connection with the other passengers; partial if it only restates the fuel savings."
+    },
+    {
+      "id": "fr-b1-le-covoiturage-q5",
+      "type": "cloze",
+      "item_id": "fr.story.fr-b1-le-covoiturage.2",
+      "prompt": "Fill in each blank with the right word.",
+      "text": "Un matin, la voiture tombe en {{mot}} sur l'autoroute. Ines appelle une {{mot2}} pendant que Marc plaisante pour détendre l'atmosphère.",
+      "blanks": [
+        {
+          "id": "mot",
+          "options": ["panne", "accident", "retard"],
+          "answer": "panne"
+        },
+        {
+          "id": "mot2",
+          "options": ["dépanneuse", "ambulance", "police"],
+          "answer": "dépanneuse"
+        }
+      ]
     }
   ],
   "audio": null,

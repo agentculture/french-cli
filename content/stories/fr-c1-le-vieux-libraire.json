@@ -93,6 +93,25 @@
       "item_id": "fr.story.fr-c1-le-vieux-libraire.4",
       "prompt": "Le texte ne révèle jamais ce que contenait le livre offert par Monsieur Aubert. Pourquoi, selon toi, l'auteur fait-il ce choix ? Qu'est-ce que cela ajoute à l'histoire ?",
       "rubric": "Passes if the learner reflects on the literary effect of withholding the title (mystery, focus on the human moment rather than the object, room for the reader's imagination) rather than simply guessing a specific title; partial if the answer only guesses a title without reflecting on the choice."
+    },
+    {
+      "id": "fr-c1-le-vieux-libraire-q5",
+      "type": "cloze",
+      "item_id": "fr.story.fr-c1-le-vieux-libraire.2",
+      "prompt": "Fill in each blank with the right word.",
+      "text": "Il avait ce don, rare, de {{verbe}} en quelques mots à peine échangés ce qu'une personne {{verbe2}} vraiment à lire.",
+      "blanks": [
+        {
+          "id": "verbe",
+          "options": ["deviner", "décider", "devenir"],
+          "answer": "deviner"
+        },
+        {
+          "id": "verbe2",
+          "options": ["cherchait", "demandait", "voulait"],
+          "answer": "cherchait"
+        }
+      ]
     }
   ],
   "audio": null,

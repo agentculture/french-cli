@@ -72,6 +72,17 @@
       "item_id": "fr.story.fr-a1-le-marche.4",
       "prompt": "Pourquoi Léo est-il fier à la fin de l'histoire ?",
       "rubric": "Passes if the answer names that he spoke French with the vendors by himself/alone; partial if it only says he went to the market."
+    },
+    {
+      "id": "fr-a1-le-marche-q5",
+      "type": "cloze",
+      "item_id": "fr.story.fr-a1-le-marche.3",
+      "prompt": "Fill in each blank with the right word.",
+      "text": "Léo dit au vendeur : « Bonjour, monsieur. Je voudrais un {{unit}} de carottes, s'il vous plaît. »",
+      "answer": "kilo",
+      "blanks": [
+        { "id": "unit", "options": ["kilo", "litre", "mètre"], "answer": "kilo" }
+      ]
     }
   ],
   "audio": null,

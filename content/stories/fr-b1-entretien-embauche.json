@@ -85,6 +85,21 @@
       "item_id": "fr.story.fr-b1-entretien-embauche.4",
       "prompt": "Que ferais-tu si on te posait une question à laquelle tu ne t'attends pas pendant un entretien ?",
       "rubric": "Passes if the learner gives a coherent personal strategy in French (e.g. pausing to think, asking for clarification, giving a concrete example); partial if the answer is a single word."
+    },
+    {
+      "id": "fr-b1-entretien-embauche-q5",
+      "type": "cloze",
+      "item_id": "fr.story.fr-b1-entretien-embauche.3",
+      "prompt": "Fill in each blank with the right word.",
+      "text": "L'entreprise contactera les candidats {{participe}} dans les deux semaines. Toute cette nervosité, finalement, en valait la {{mot}}.",
+      "blanks": [
+        {
+          "id": "participe",
+          "options": ["retenus", "retenues", "retenu"],
+          "answer": "retenus"
+        },
+        { "id": "mot", "options": ["peine", "douleur", "peur"], "answer": "peine" }
+      ]
     }
   ],
   "audio": null,

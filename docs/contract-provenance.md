@@ -25,9 +25,14 @@ subject as a subprocess.
 
 - **Source repo:** `agentculture/learn-cli`
 - **Contract:** subject-plugin contract **v1.0** (`docs/specs/subject-plugin-contract.md`)
-- **Source commit:** `ed81b87` (2026-07-11)
+- **Source commit:** `cdac077` (2026-07-11)
 - **Cited on:** 2026-07-11
-- **Cited by:** french-cli (task t4 of the learn uplift)
+- **Cited by:** french-cli (task t4 of the learn uplift; re-synced by task t11 to
+  pick up the pick-the-right-word cloze variant fields — `text`/`blanks` on the
+  exercise def and the new `cloze_blank` def — added to `story.json` and
+  `practice.json`, contract §3.6.1. Purely additive: contract version stays
+  `1.0`, and every payload that predates these fields keeps validating
+  unchanged.)
 
 ## Re-sync procedure
 

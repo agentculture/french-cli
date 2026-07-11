@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "fr-b1-la-fete-des-voisins",
+  "subject": "french",
+  "title": "La fête des voisins",
+  "level": "intermediate",
+  "level_detail": "B1",
+  "language": "fr",
+  "summary": "Farida organizes her Paris building's annual Neighbours' Day and discovers she barely knew the people living around her.",
+  "body": "Chaque année, le dernier vendredi de mai, la France célèbre la fête des voisins. Ce jour-là, les habitants d'un même immeuble ou d'une même rue se retrouvent dans la cour ou sur le trottoir pour partager un repas ensemble.\n\nCette année, c'est Farida qui organise l'événement dans son immeuble parisien. Elle affiche une invitation dans le hall : « Venez avec un plat, une boisson, et surtout votre bonne humeur ! »\n\nLe soir venu, les tables se remplissent peu à peu. Monsieur Petit, le voisin du cinquième étage que personne ne connaît vraiment, apporte une tarte aux pommes faite maison. La famille Nguyen, arrivée récemment dans l'immeuble, propose des rouleaux de printemps qui ont beaucoup de succès.\n\nAu début, les conversations restent polies et un peu formelles. Mais après quelques verres de vin et beaucoup de rires, l'ambiance se détend. Farida découvre que Monsieur Petit a été professeur de musique pendant trente ans, et qu'il joue encore du piano tous les dimanches. Les enfants, eux, courent entre les tables et organisent leurs propres jeux dans la cour.\n\nÀ la fin de la soirée, plusieurs voisins échangent leurs numéros de téléphone. « On devrait faire ça plus souvent, » dit Madame Nguyen en aidant à ranger les chaises. Farida est d'accord : avant cette soirée, elle connaissait à peine le nom de ses voisins ; maintenant, elle a l'impression d'avoir une vraie petite communauté autour d'elle.\n\nLa fête des voisins, née d'une initiative simple il y a plus de vingt ans, continue chaque année de rapprocher des gens qui, autrement, ne se seraient peut-être jamais parlé.",
+  "glossary": [
+    {
+      "term": "la fête des voisins",
+      "definition": "Neighbours' Day, a French community event held annually",
+      "note": "Held on the last Friday of May since the late 1990s."
+    },
+    {
+      "term": "l'immeuble (m.)",
+      "definition": "the apartment building"
+    },
+    {
+      "term": "afficher",
+      "definition": "to post/put up (a notice)"
+    },
+    {
+      "term": "la bonne humeur",
+      "definition": "good mood, cheerfulness"
+    },
+    {
+      "term": "fait(e) maison",
+      "definition": "homemade"
+    },
+    {
+      "term": "les rouleaux de printemps",
+      "definition": "spring rolls"
+    },
+    {
+      "term": "se détendre",
+      "definition": "to relax, to loosen up"
+    },
+    {
+      "term": "à peine",
+      "definition": "barely, hardly"
+    },
+    {
+      "term": "rapprocher",
+      "definition": "to bring closer together"
+    },
+    {
+      "term": "une initiative",
+      "definition": "an initiative"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "fr-b1-la-fete-des-voisins-q1",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-b1-la-fete-des-voisins.1",
+      "prompt": "Quand a lieu la fête des voisins ?",
+      "choices": ["Le dernier vendredi de mai", "Le premier janvier", "Le 14 juillet"],
+      "answer": "Le dernier vendredi de mai"
+    },
+    {
+      "id": "fr-b1-la-fete-des-voisins-q2",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-b1-la-fete-des-voisins.2",
+      "prompt": "Qui apporte une tarte aux pommes faite maison ?",
+      "choices": ["Monsieur Petit", "Farida", "Madame Nguyen"],
+      "answer": "Monsieur Petit"
+    },
+    {
+      "id": "fr-b1-la-fete-des-voisins-q3",
+      "type": "short_answer",
+      "item_id": "fr.story.fr-b1-la-fete-des-voisins.3",
+      "prompt": "Qu'est-ce que Farida apprend sur Monsieur Petit pendant la soirée ?",
+      "rubric": "Passes if the answer mentions he was a music teacher for thirty years and still plays piano on Sundays; partial if only one of the two facts is given."
+    },
+    {
+      "id": "fr-b1-la-fete-des-voisins-q4",
+      "type": "discussion",
+      "item_id": "fr.story.fr-b1-la-fete-des-voisins.4",
+      "prompt": "Selon le texte, pourquoi la fête des voisins est-elle importante pour une communauté ? Ton quartier organise-t-il un événement similaire ?",
+      "rubric": "Passes if the response connects the event to building community between strangers and offers at least a brief reflection on the learner's own context; partial if it only summarizes the story."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "learn-cli t7a",
+    "generated_at": "2026-07-11"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "fr-b2-le-teletravail",
+  "subject": "french",
+  "title": "Le télétravail, une révolution silencieuse",
+  "level": "advanced",
+  "level_detail": "B2",
+  "language": "fr",
+  "summary": "An essay-style piece weighing the promises and hidden costs of remote work, and the hybrid compromise many companies now choose.",
+  "body": "Il y a dix ans, proposer de travailler depuis son salon aurait semblé, pour la plupart des entreprises françaises, tout à fait saugrenu. Aujourd'hui, le télétravail s'est imposé comme une pratique courante, bouleversant profondément notre rapport au travail et à l'espace urbain.\n\nPour ses partisans, les avantages sont évidents. Fini les heures perdues dans les transports en commun bondés ; fini le stress de devoir arriver à l'heure malgré une grève ou un embouteillage. De nombreux salariés affirment être plus productifs chez eux, à l'abri des interruptions constantes qui rythment souvent la vie de bureau. Certains y voient même une meilleure conciliation entre vie professionnelle et vie personnelle, un équilibre longtemps considéré comme inaccessible.\n\nPourtant, il serait naïf de croire que cette transformation ne comporte aucun inconvénient. Plusieurs managers s'inquiètent que le télétravail n'affaiblisse la cohésion des équipes : sans les échanges informels de la machine à café, les liens entre collègues se distendent, et les jeunes recrues peinent parfois à s'intégrer pleinement à la culture de l'entreprise. D'autres soulignent le risque, bien réel, que la frontière entre vie privée et vie professionnelle ne s'efface complètement, certains salariés se surprenant à répondre à des e-mails tard le soir.\n\nFace à ces constats contradictoires, de nombreuses entreprises optent désormais pour un modèle hybride, alternant jours au bureau et jours à domicile. Cette solution, bien qu'imparfaite, semble pour l'instant représenter le compromis le plus largement accepté.\n\nReste une question, plus profonde, que peu osent poser franchement : et si le télétravail n'était que la première étape d'une remise en cause bien plus vaste de l'organisation même du travail salarié, telle que nous la connaissons depuis plus d'un siècle ?",
+  "glossary": [
+    {
+      "term": "saugrenu(e)",
+      "definition": "absurd, preposterous"
+    },
+    {
+      "term": "bouleverser",
+      "definition": "to upend, to profoundly disrupt"
+    },
+    {
+      "term": "bondé(e)",
+      "definition": "packed, crowded (transport)"
+    },
+    {
+      "term": "un embouteillage",
+      "definition": "a traffic jam"
+    },
+    {
+      "term": "la conciliation (vie pro/perso)",
+      "definition": "work-life balance"
+    },
+    {
+      "term": "la cohésion",
+      "definition": "cohesion, team unity"
+    },
+    {
+      "term": "se distendre",
+      "definition": "to loosen, to become strained (of ties or relationships)"
+    },
+    {
+      "term": "peiner à",
+      "definition": "to struggle to (do something)"
+    },
+    {
+      "term": "s'effacer",
+      "definition": "to fade away, to disappear"
+    },
+    {
+      "term": "un modèle hybride",
+      "definition": "a hybrid model"
+    },
+    {
+      "term": "une remise en cause",
+      "definition": "a questioning, a challenging (of an established idea)"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "fr-b2-le-teletravail-q1",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-b2-le-teletravail.1",
+      "prompt": "Selon le texte, quel est un avantage souvent cité du télétravail ?",
+      "choices": ["Moins de temps perdu dans les transports", "Un salaire plus élevé", "Moins de réunions"],
+      "answer": "Moins de temps perdu dans les transports"
+    },
+    {
+      "id": "fr-b2-le-teletravail-q2",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-b2-le-teletravail.2",
+      "prompt": "Quelle inquiétude certains managers expriment-ils ?",
+      "choices": [
+        "Que la cohésion des équipes s'affaiblisse",
+        "Que les salariés gagnent trop d'argent",
+        "Que les bureaux deviennent trop grands"
+      ],
+      "answer": "Que la cohésion des équipes s'affaiblisse"
+    },
+    {
+      "id": "fr-b2-le-teletravail-q3",
+      "type": "short_answer",
+      "item_id": "fr.story.fr-b2-le-teletravail.3",
+      "prompt": "Quel compromis de nombreuses entreprises adoptent-elles face à ce débat ?",
+      "rubric": "Passes if the answer names the hybrid model alternating office days and remote days; partial if it only says 'a compromise' without naming it."
+    },
+    {
+      "id": "fr-b2-le-teletravail-q4",
+      "type": "discussion",
+      "item_id": "fr.story.fr-b2-le-teletravail.4",
+      "prompt": "L'auteur termine par une question sur une remise en cause plus vaste de l'organisation du travail salarié. Qu'en penses-tu : le télétravail est-il une simple adaptation, ou le début d'un changement plus profond ?",
+      "rubric": "Passes if the learner takes and defends a position with at least one supporting reason, engaging with the article's closing question; partial if it restates the question without taking a position."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "learn-cli t7a",
+    "generated_at": "2026-07-11"
+  }
+}

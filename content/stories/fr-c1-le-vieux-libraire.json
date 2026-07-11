@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "fr-c1-le-vieux-libraire",
+  "subject": "french",
+  "title": "Le vieux libraire",
+  "level": "advanced",
+  "level_detail": "C1",
+  "language": "fr",
+  "summary": "A literary short story about an old bookseller's uncanny gift for recommending the book a stranger truly needs, not the one she asked for.",
+  "body": "Monsieur Aubert tenait sa librairie depuis si longtemps que personne, dans le quartier, ne se souvenait d'un temps où elle n'avait pas existé. Coincée entre une pharmacie et un magasin de vêtements qui changeait d'enseigne tous les deux ans, la petite boutique semblait échapper au temps, avec sa devanture en bois vert écaillé et son odeur tenace de papier vieilli.\n\nCela faisait quarante-trois ans que Monsieur Aubert vendait des livres, et il aurait été bien en peine de dire combien il en avait recommandés à ses clients au fil des décennies. Il avait ce don, rare, de deviner en quelques mots à peine échangés ce qu'une personne cherchait vraiment à lire — non pas ce qu'elle demandait, mais ce dont, sans le savoir elle-même, elle avait besoin.\n\nUn après-midi de novembre, alors que la pluie tambourinait contre la vitrine, une jeune femme entra, visiblement égarée plus qu'intéressée par les livres. Elle errait entre les rayonnages sans but précis, effleurant les tranches du bout des doigts.\n\n« Vous cherchez quelque chose de particulier ? » demanda-t-il, sans lever complètement les yeux du roman qu'il était en train de réparer.\n\n« Pas vraiment, » répondit-elle après un silence. « Je viens de perdre mon emploi. Je ne sais pas très bien ce que je fais ici, à vrai dire. »\n\nMonsieur Aubert hocha la tête, comme si cette réponse ne le surprenait guère. Il se leva, disparut un instant entre deux étagères, et revint avec un livre à la couverture usée, dont le titre avait presque disparu.\n\n« Celui-ci, » dit-il simplement, en le lui tendant. « Ce n'est pas ce que vous cherchiez. Mais je crois que c'est ce dont vous avez besoin, aujourd'hui. »\n\nElle le regarda, surprise par cette assurance tranquille, puis accepta le livre sans poser de questions.\n\nDes années plus tard, devenue elle-même écrivaine, elle raconterait souvent cette scène dans les interviews, sans jamais réussir à expliquer tout à fait pourquoi ce vieil homme, ce jour-là, avait vu juste. Quant à Monsieur Aubert, il continua, jusqu'à sa retraite, à faire ce qu'il avait toujours fait : ouvrir sa boutique chaque matin, et attendre, avec une patience inlassable, que les bonnes personnes croisent les bons livres.",
+  "glossary": [
+    {
+      "term": "coincé(e)",
+      "definition": "wedged, squeezed (between two things)"
+    },
+    {
+      "term": "une devanture",
+      "definition": "a shop front"
+    },
+    {
+      "term": "écaillé(e)",
+      "definition": "chipped, peeling (of paint)"
+    },
+    {
+      "term": "tenace",
+      "definition": "stubborn, persistent (of a smell)"
+    },
+    {
+      "term": "être en peine de",
+      "definition": "to be at a loss to (do something)"
+    },
+    {
+      "term": "un rayonnage",
+      "definition": "a bookshelf, a shelving unit"
+    },
+    {
+      "term": "effleurer",
+      "definition": "to lightly touch, to brush against"
+    },
+    {
+      "term": "égaré(e)",
+      "definition": "lost, disoriented"
+    },
+    {
+      "term": "hocher la tête",
+      "definition": "to nod"
+    },
+    {
+      "term": "tendre (un objet)",
+      "definition": "to hold out (an object)"
+    },
+    {
+      "term": "voir juste",
+      "definition": "to be right, to have judged correctly"
+    },
+    {
+      "term": "inlassable",
+      "definition": "tireless, untiring"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "fr-c1-le-vieux-libraire-q1",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-c1-le-vieux-libraire.1",
+      "prompt": "Depuis combien de temps Monsieur Aubert tient-il sa librairie ?",
+      "choices": ["Quarante-trois ans", "Dix ans", "Vingt ans"],
+      "answer": "Quarante-trois ans"
+    },
+    {
+      "id": "fr-c1-le-vieux-libraire-q2",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-c1-le-vieux-libraire.2",
+      "prompt": "Pourquoi la jeune femme entre-t-elle dans la librairie ?",
+      "choices": [
+        "Elle vient de perdre son emploi et se sent perdue",
+        "Elle cherche un livre précis pour un cadeau",
+        "Elle s'abrite de la pluie uniquement"
+      ],
+      "answer": "Elle vient de perdre son emploi et se sent perdue"
+    },
+    {
+      "id": "fr-c1-le-vieux-libraire-q3",
+      "type": "short_answer",
+      "item_id": "fr.story.fr-c1-le-vieux-libraire.3",
+      "prompt": "Que fait Monsieur Aubert avant de donner un livre à la jeune femme ?",
+      "rubric": "Passes if the answer mentions he goes and selects a specific worn/old book from between the shelves rather than asking more questions; partial if it just says 'he gives her a book'."
+    },
+    {
+      "id": "fr-c1-le-vieux-libraire-q4",
+      "type": "discussion",
+      "item_id": "fr.story.fr-c1-le-vieux-libraire.4",
+      "prompt": "Le texte ne révèle jamais ce que contenait le livre offert par Monsieur Aubert. Pourquoi, selon toi, l'auteur fait-il ce choix ? Qu'est-ce que cela ajoute à l'histoire ?",
+      "rubric": "Passes if the learner reflects on the literary effect of withholding the title (mystery, focus on the human moment rather than the object, room for the reader's imagination) rather than simply guessing a specific title; partial if the answer only guesses a title without reflecting on the choice."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "learn-cli t7a",
+    "generated_at": "2026-07-11"
+  }
+}

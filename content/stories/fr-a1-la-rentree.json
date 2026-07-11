@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "fr-a1-la-rentree",
+  "subject": "french",
+  "title": "La rentrée de Nina",
+  "level": "beginner",
+  "level_detail": "A1",
+  "language": "fr",
+  "summary": "It is Nina's first day back at school, and she is a little nervous about her new teacher.",
+  "body": "Aujourd'hui, c'est la rentrée. Nina a huit ans et elle est un peu nerveuse.\n\nLe matin, elle se réveille tôt. Elle prend son petit-déjeuner : du pain, du beurre et un chocolat chaud. Sa mère prépare son cartable avec des cahiers, des crayons et une nouvelle trousse bleue.\n\n« Tu es prête, Nina ? » demande sa mère. « Oui, mais j'ai un peu peur, » répond Nina. « Il y a une nouvelle maîtresse cette année. »\n\nÀ l'école, Nina retrouve ses amis dans la cour. Ils sont contents de se revoir après les vacances d'été. La maîtresse s'appelle Madame Dubois. Elle sourit et dit : « Bonjour, les enfants ! Bienvenue dans la classe de CE2. »\n\nPendant la journée, les élèves apprennent leurs nouveaux noms, rangent leurs affaires et écoutent une histoire. À midi, Nina mange à la cantine avec sa meilleure amie, Léa.\n\nLe soir, Nina raconte sa journée à ses parents. « La maîtresse est très gentille, » dit-elle. « Et j'ai une nouvelle amie dans ma classe ! »",
+  "glossary": [
+    {
+      "term": "la rentrée",
+      "definition": "back-to-school (day), the start of the school year"
+    },
+    {
+      "term": "le cartable",
+      "definition": "the school bag"
+    },
+    {
+      "term": "la trousse",
+      "definition": "the pencil case"
+    },
+    {
+      "term": "la maîtresse",
+      "definition": "the (female) teacher",
+      "note": "Used for a primary-school teacher; le maître for a man."
+    },
+    {
+      "term": "la cour",
+      "definition": "the schoolyard"
+    },
+    {
+      "term": "la cantine",
+      "definition": "the school canteen"
+    },
+    {
+      "term": "avoir peur",
+      "definition": "to be scared/afraid"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "fr-a1-la-rentree-q1",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-a1-la-rentree.1",
+      "prompt": "Quel âge a Nina ?",
+      "choices": ["Six ans", "Huit ans", "Dix ans"],
+      "answer": "Huit ans"
+    },
+    {
+      "id": "fr-a1-la-rentree-q2",
+      "type": "multiple_choice",
+      "item_id": "fr.story.fr-a1-la-rentree.2",
+      "prompt": "Comment s'appelle la maîtresse de Nina ?",
+      "choices": ["Madame Dubois", "Madame Martin", "Madame Petit"],
+      "answer": "Madame Dubois"
+    },
+    {
+      "id": "fr-a1-la-rentree-q3",
+      "type": "true_false",
+      "item_id": "fr.story.fr-a1-la-rentree.3",
+      "prompt": "Nina n'a pas d'amis à l'école.",
+      "answer": "false"
+    },
+    {
+      "id": "fr-a1-la-rentree-q4",
+      "type": "open",
+      "item_id": "fr.story.fr-a1-la-rentree.4",
+      "prompt": "Pourquoi Nina a-t-elle un peu peur le matin de la rentrée ?",
+      "rubric": "Passes if the answer mentions the new teacher or general first-day nerves; partial if it just says 'she is scared' with no reason."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "learn-cli t7a",
+    "generated_at": "2026-07-11"
+  }
+}
